@@ -18,5 +18,9 @@ if [ ! -d "devstack" ]; then
 fi
 # for a local deployment, this repo folder is shared between the host and the guests
 if [ ! -d "dragonflow" ]; then
-    git clone http://git.openstack.org/openstack/dragonflow.git
+    git clone https://github.com/intlabs/dragonflow.git
+fi
+
+if [ ! -d "networking-odl" ]; then
+    git clone https://github.com/openstack/networking-odl.git
 fi
